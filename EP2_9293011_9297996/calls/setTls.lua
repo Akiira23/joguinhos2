@@ -34,7 +34,10 @@ function setTls.setTiles(index, tileset, gid, bg, self)
          local quadX = (x - 1) * tileW + margin + (x - 1) * spacing
          local quadY = (y - 1) * tileH + margin + (y - 1) * spacing
          local type = ""
-         local properties, terrain, animation, objectGroup
+         local properties = ""
+         local terrain = ""
+         local animation = ""
+         local objectGroup = ""
 
          local tile = {
             id          = id,

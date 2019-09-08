@@ -6,7 +6,7 @@ function layerTls.getLayerTilePosition(layer, tile, x, y, self)
    local tileW = self.tilewidth
    local tileH = self.tileheight
    local tileX, tileY
-   
+
    if self.orientation ~= nil then
       tileX = (x - y) * (tileW / 2) + tile.offset.x + layer.width * tileW / 2 - self.tilewidth / 2
       tileY = (x + y - 2) * (tileH / 2) + tile.offset.y

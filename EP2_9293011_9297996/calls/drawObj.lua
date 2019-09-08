@@ -3,7 +3,7 @@
 local drawObj = {}
 
 function drawObj.drawObjectLayer(layer)
-   if type(layer) == "string" or type(layer) == "number" then
+   if layer.type == "string" or layer.type == "number" then
       layer = self.layers[layer]
    end
    if layer.type ~= "objectgroup" then

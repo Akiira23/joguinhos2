@@ -151,7 +151,7 @@ function Map.drawLayer(_, layer)
    love.graphics.setColor(r,g,b,a)
 end
 
-function Map:setLayer(layer, path)
+function Map:setLayer(layer)
    layer.x      = (layer.x or 0) + layer.offsetx + self.offsetx
    layer.y      = (layer.y or 0) + layer.offsety + self.offsety
    layer.update = function() end

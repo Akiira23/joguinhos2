@@ -55,7 +55,6 @@ function setObj.setObjectCoordinates(layer, self)
 end
 
 function setObj.setObjectSpriteBatches(layer)
-   local newBatch = love.graphics.newSpriteBatch
    local batches  = {}
    layer.batches = batches
 end
